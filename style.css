@@ -1,0 +1,254 @@
+:root {
+  --blue: #3aa8c1;
+  --blue-light: #eaf7fa;
+  --blue-dark: #21748a;
+  --text: #2b3538;
+  --text-light: #6b7a7d;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.8;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.6em;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  border-bottom: 1px solid #e3eef0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.nav a:hover {
+  color: var(--blue);
+}
+
+.tel-button {
+  background: var(--blue);
+  color: var(--white);
+  padding: 10px 18px;
+  border-radius: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.tel-button:hover {
+  background: var(--blue-dark);
+}
+
+.hero {
+  background: linear-gradient(180deg, var(--blue-light) 0%, var(--white) 100%);
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: var(--blue-dark);
+}
+
+.hero p {
+  color: var(--text-light);
+  font-size: 1.05rem;
+  margin-bottom: 2em;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  padding: 16px 36px;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.cta:hover {
+  background: var(--blue-dark);
+}
+
+.section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  color: var(--blue-dark);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.about {
+  text-align: center;
+}
+
+.about p {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.menu-card {
+  background: var(--blue-light);
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.menu-card h3 {
+  color: var(--blue-dark);
+  font-size: 1.1rem;
+}
+
+.menu-card .price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0.3em 0;
+}
+
+.menu-card .desc {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.staff-grid {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.staff-card {
+  text-align: center;
+  max-width: 320px;
+}
+
+.placeholder-photo {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.staff-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.gallery-item {
+  height: 160px;
+}
+
+.access-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.hours table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours th, .hours td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #e3eef0;
+  font-weight: 400;
+}
+
+.hours th {
+  color: var(--blue-dark);
+  width: 40%;
+}
+
+.placeholder {
+  color: #c0392b;
+  font-size: 0.85rem;
+  background: #fdf1ef;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.site-footer {
+  background: var(--blue-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 24px;
+  font-size: 0.9rem;
+}
